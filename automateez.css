@@ -39,6 +39,23 @@
 .aez-display{font-family:'Sora',sans-serif;font-weight:700;letter-spacing:-.035em;line-height:1}
 .aez-h{font-family:'Sora',sans-serif;font-weight:600;letter-spacing:-.02em;line-height:1.1}
 .aez-mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace}
+
+.aez-eyebrow--no-dash::before {
+  display: none;
+}
+
+.aez-animator__quote {
+  border-left: none;
+  padding-left: 0;
+}
+
+.aez-lp section + section {
+  margin-top: 0; /* les sections ne doivent pas avoir de margin-top négatif */
+}
+.aez-program__head {
+  text-align: left; /* déjà à gauche normalement */
+}
+
 .aez-eyebrow{
   font-family:'JetBrains Mono',monospace;
   font-size:11px;
@@ -55,7 +72,7 @@
 .aez-title-accent{color:var(--aez-accent) !important}
 
 /* ── Sections ───────────────────────────────────────────────── */
-.aez-lp section{padding:80px var(--aez-pad-x)}
+.aez-lp section{padding:100px var(--aez-pad-x)}
 .aez-section--night{background:var(--aez-bg-night);color:#fff}
 .aez-section--orange{background:var(--aez-accent);color:var(--aez-ink);text-align:center}
 .aez-section--white{background:#fff}
