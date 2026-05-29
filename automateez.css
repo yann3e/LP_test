@@ -53,8 +53,13 @@
 }
 .aez-eyebrow.on-dark{color:var(--aez-accent)}
 .aez-eyebrow::before{content:'';width:18px;height:1px;background:currentColor}
+
 /* variante APRÈS la base — sinon elle serait écrasée */
-.aez-eyebrow--no-dash::before{display:none !important}
+/* Version without dash */
+.aez-eyebrow--no-dash::before {
+  content: none !important;
+  display: none !important;
+}
 
 .aez-title-accent{color:var(--aez-accent) !important}
 
@@ -324,12 +329,6 @@
   background: currentColor;
   display: inline-block;
   border-radius: 999px;
-}
-
-/* Version without dash */
-.aez-eyebrow--no-dash::before {
-  content: none !important;
-  display: none !important;
 }
 
 /* ── Responsive ─────────────────────────────────────────────── */
