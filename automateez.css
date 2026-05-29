@@ -315,6 +315,23 @@
 .aez-footer img{height:22px;width:auto;filter:brightness(0) invert(1)}
 .aez-footer__meta{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em}
 
+
+/* Decorative dash before title */
+.aez-eyebrow::before {
+  content: "";
+  width: 42px;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+  border-radius: 999px;
+}
+
+/* Version without dash */
+.aez-eyebrow--no-dash::before {
+  content: none !important;
+  display: none !important;
+}
+
 /* ── Responsive ─────────────────────────────────────────────── */
 @media (min-width:1200px){
   .aez-hero__h1{font-size:104px}
