@@ -318,7 +318,11 @@
   display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
 }
 .aez-footer img{height:22px;width:auto;filter:brightness(0) invert(1)}
-.aez-footer__meta{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em}
+/*.aez-footer__meta{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em}*/
+.aez-footer__meta{
+  content: none !important;
+  display: none !important;
+}
 
 
 /* Decorative dash before title */
