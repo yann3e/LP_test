@@ -1,0 +1,39 @@
+/* =========================================================
+   AUTOMATEEZ V1 - Correctifs System.io
+   ========================================================= */
+
+/* Supprime le tiret décoratif devant TOUS les eyebrow */
+.aez-eyebrow::before,
+.aez-eyebrow:before {
+    content: none !important;
+    display: none !important;
+    width: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+}
+
+/* Supprime tout éventuel retrait laissé par le pseudo-élément */
+.aez-eyebrow {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Version fond sombre */
+.aez-eyebrow.on-dark::before,
+.aez-eyebrow.on-dark:before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Citation Oury : suppression du pipe / trait vertical */
+.aez-animator__quote::before,
+.aez-animator__quote:before {
+    content: none !important;
+    display: none !important;
+}
+
+.aez-animator__quote {
+    border-left: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
