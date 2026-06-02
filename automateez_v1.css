@@ -444,3 +444,55 @@
   .aez-faq__answer{max-height:none !important;overflow:visible !important}
   .aez-lp section{padding:24px 0;break-inside:avoid}
 }
+/* ==========================================================
+   FULL WIDTH - AUCUNE MARGE / AUCUN PADDING ÉCRAN
+   ========================================================== */
+
+// Suppression des margins et paddings
+
+/* Supprime les marges par défaut du navigateur */
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Supprime tous les espacements latéraux de la landing */
+.aez-lp {
+    --aez-pad-x: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+/* Toutes les sections bord à bord */
+.aez-lp section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+}
+
+/* Navigation pleine largeur */
+.aez-nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Barre sociale pleine largeur */
+.aez-social-bar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Supprime tout wrapper System.io éventuel */
+.container,
+.container-fluid,
+.sqs-block,
+.sy-container,
+[class*="container"] {
+    max-width: 100% !important;
+}
