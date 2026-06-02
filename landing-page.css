@@ -389,3 +389,12 @@ html:has(> body > .aez-lp){margin:0;padding:0}
   .aez-faq__answer{max-height:none !important;overflow:visible !important}
   .aez-lp section{padding:24px 0; break-inside:avoid}
 }
+.aez-animator__quote::before{
+    content:none !important;
+    display:none !important;
+}
+
+.aez-animator__quote{
+    border-left:none !important;
+    padding-left:0 !important;
+}
