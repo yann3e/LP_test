@@ -64,7 +64,7 @@
 .aez-title-accent{color:var(--aez-accent) !important}
 
 /* ── Sections ───────────────────────────────────────────────── */
-.aez-lp section{padding:100px var(--aez-pad-x)}
+.aez-lp section{padding:0px var(--aez-pad-x)}
 .aez-section--night{background:var(--aez-bg-night);color:#fff}
 .aez-section--orange{background:var(--aez-accent);color:var(--aez-ink);text-align:center;padding-bottom:100px}
 .aez-section--white{background:#fff}
@@ -308,18 +308,6 @@
 .aez-final h2{font-size:48px;margin-bottom:18px;color:#fff;line-height:1}
 .aez-final h2 .aez-final__accent{color:var(--aez-accent)}
 .aez-final p{font-size:15px;color:rgba(255,255,255,.65);margin:0 auto 28px;max-width:420px}
-
-/* ── Footer ─────────────────────────────────────────────────── */
-/*.aez-footer{
-  padding:28px var(--aez-pad-x);
-  background:var(--aez-bg-night);
-  color:rgba(255,255,255,.5);
-  border-top:1px solid rgba(255,255,255,.12);
-  display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
-}*/
-/*.aez-footer img{height:22px;width:auto;filter:brightness(0) invert(1)}*/
-/*.aez-footer__meta{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em}*/
-
 
 
 /* Decorative dash before title */
