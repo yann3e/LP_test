@@ -310,19 +310,16 @@
 .aez-final p{font-size:15px;color:rgba(255,255,255,.65);margin:0 auto 28px;max-width:420px}
 
 /* ── Footer ─────────────────────────────────────────────────── */
-.aez-footer{
+/*.aez-footer{
   padding:28px var(--aez-pad-x);
   background:var(--aez-bg-night);
   color:rgba(255,255,255,.5);
   border-top:1px solid rgba(255,255,255,.12);
   display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
-}
-.aez-footer img{height:22px;width:auto;filter:brightness(0) invert(1)}
+}*/
+/*.aez-footer img{height:22px;width:auto;filter:brightness(0) invert(1)}*/
 /*.aez-footer__meta{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em}*/
-.aez-footer__meta{
-  content: none !important;
-  display: none !important;
-}
+
 
 
 /* Decorative dash before title */
@@ -333,6 +330,41 @@
   background: currentColor;
   display: inline-block;
   border-radius: 999px;
+}
+
+.aez-eyebrow::before,
+.aez-eyebrow:before {
+    content: none !important;
+    display: none !important;
+    width: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+}
+
+/* Supprime tout éventuel retrait laissé par le pseudo-élément */
+.aez-eyebrow {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Version fond sombre */
+.aez-eyebrow.on-dark::before,
+.aez-eyebrow.on-dark:before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Citation Oury : suppression du pipe / trait vertical */
+.aez-animator__quote::before,
+.aez-animator__quote:before {
+    content: none !important;
+    display: none !important;
+}
+
+.aez-animator__quote {
+    border-left: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
 }
 
 
