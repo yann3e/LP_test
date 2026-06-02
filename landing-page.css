@@ -37,6 +37,11 @@ html:has(> body > .aez-lp){margin:0;padding:0}
   font-family:'JetBrains Mono',monospace;font-size:14px;text-transform:uppercase;letter-spacing:.12em;
   color:var(--aez-blue);font-weight:600;display:inline-flex;align-items:center;gap:8px
 }
+.aez-eyebrow--no-dash::before {
+  content: none !important;
+  display: none !important;
+}
+
 .aez-eyebrow.on-dark{color:var(--aez-accent)}
 .aez-eyebrow::before{content:'';width:24px;height:1.5px;background:currentColor}
 .aez-title-accent{color:var(--aez-accent) !important}
