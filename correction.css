@@ -60,8 +60,7 @@
   content: none !important;
   display: none !important;
 }
-
-.aez-title-accent{color:var(--aez-accent) !important}
+.aez-title-accent{color:var(--aez-accent) !important;}
 
 /* ── Sections ───────────────────────────────────────────────── */
 .aez-lp section{padding:45px var(--aez-pad-x);}
@@ -537,9 +536,9 @@ margin-left : 25px !important;
 display : flex;
 }
 .aez-problem__grid {
-margin : 25px;
+width : 98%;
+display : inline-grid;
 }
-  
 .aez-animator__name {
 text-align : left;
 margin-left : 20px;
