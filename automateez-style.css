@@ -25,6 +25,9 @@
     /* TYPOGRAPHY */
     .eyebrow { display: block; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .10em; color: var(--orange); margin-bottom: 14px; }
     .eyebrow--dark { color: rgba(255,255,255,.55); }
+    .eyebrow--dark {
+            text-align : justify;
+            }
     .section-title { font-size: 34px; font-weight: 700; line-height: 1.15; letter-spacing: -0.025em; color: var(--text); }
     .section-title--white { color: #fff; }
     .accent { color: var(--orange); }
@@ -63,8 +66,8 @@
     .hero__h1 { font-size: clamp(40px, 5.5vw, 58px); font-weight: 800; line-height: 1.05; letter-spacing: -0.035em; margin-bottom: 8px; }
     .hero__h1-pill { background: var(--orange); color: #fff; border-radius: 8px; padding: 2px 14px; display: inline-block; }
     .hero__h1-muted { font-size: clamp(40px, 5.5vw, 58px); font-weight: 800; line-height: 1.05; letter-spacing: -0.035em; color: var(--text-muted); margin-bottom: 28px; opacity: .4; }
-    .hero__sub { font-size: 17px; color: var(--text-muted); line-height: 1.7; max-width: 600px; margin-bottom: 40px; }
-    .hero__ctas { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; margin-bottom: 32px; }
+    .hero__sub { font-size: 17px; color: var(--text-muted); line-height: 1.7; max-width: 100%; margin-bottom: 40px; }
+    .hero__ctas { display: inline-flex; align-items: center; gap: 28px; flex-wrap: wrap; margin-bottom: 32px; }
     .hero__price-block { display: flex; flex-direction: column; gap: 3px; }
     .hero__price-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--text-light); }
     .hero__price { display: flex; align-items: baseline; gap: 10px; }
@@ -123,7 +126,7 @@
     .format-note strong { color: var(--text); }
 
     /* PERSONAS */
-    .personas { display: flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 18px; }
+    .personas { display: inline-flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 18px; }
     .persona { display: flex; flex-direction: column; align-items: center; gap: 10px; background: var(--bg-soft); border: 0.5px solid var(--border); border-radius: var(--radius-md); padding: 22px 26px; min-width: 100px; text-align: center; }
     .persona__icon { font-size: 28px; line-height: 1; }
     .persona__label { font-size: 13px; font-weight: 500; color: var(--text-muted); }
